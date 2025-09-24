@@ -4,9 +4,9 @@ function mapStatus(status) {
     'pending': 'pendente',
     'approved': 'pago',
     'cancelled': 'cancelado',
-    'rejected': 'cancelado',
-    'refunded': 'cancelado',
-    'charged_back': 'cancelado'
+    'rejected': 'rejeitado',
+    'refunded': 'reembolsado',
+    'charged_back': 'a transação foi desfeita'
   };
   return statusMap[status.toLowerCase()] || 'pendente';
 }
